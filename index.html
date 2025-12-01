@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ONX-Optimizer - FPS Booster e Limpador de PC para melhor desempenho">
+
     <title>ONX-Optimizer - Otimize seu PC</title>
+
+    <script src="/script.js"></script>   
+    <style src="/style.css"></style>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Le3OB0sAAAAAHZwWD2z_oK-2Dg8C8MpPBSaT5u-" async defer></script>
+
 </head>
 <body>
     <header>
@@ -179,29 +185,5 @@
         </div>
     </div>
 
-    <!-- Script do reCAPTCHA -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6Le3OB0sAAAAAHZwWD2z_oK-2Dg8C8MpPBSaT5u-" async defer></script>
-
-    <script>
-        // Carregamento dinâmico do CSS
-        fetch('https://onx-optimizer.vercel.app/style.css')
-            .then(r => r.text())
-            .then(css => {
-                const styleTag = document.createElement('style');
-                styleTag.textContent = css;
-                document.head.appendChild(styleTag);
-                console.log('style.css aplicado');
-            }).catch(console.error);
-
-        // Carregamento dinâmico do JavaScript
-        fetch('https://onx-optimizer.vercel.app/script.js')
-            .then(r => r.text())
-            .then(js => {
-                const scriptTag = document.createElement('script');
-                scriptTag.textContent = js;
-                document.body.appendChild(scriptTag);
-                console.log('script.js aplicado');
-            }).catch(console.error);
-    </script>
 </body>
 </html>
