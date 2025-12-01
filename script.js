@@ -403,7 +403,7 @@ class BugReportManager {
     
     // Função de envio com reCAPTCHA e POST
     submitReport(encodedUser) {
-        const RECAPTCHA_SITE_KEY = '6Le3OB0sAAAAAHZwWD2z_oK-2Dg8C8MpPBSaT5u-';
+        const RECAPTCHA_SITE_KEY = '6Ldnwx0sAAAAADTa_Whis-SwnStwiOC3v_O4dcob';
         const API_ENDPOINT = 'https://onx-optimizer.vercel.app/api/suporte';
         const submitButton = this.bugReportForm.querySelector('button[type="submit"]');
         
@@ -415,6 +415,7 @@ class BugReportManager {
         grecaptcha.ready(() => {
             grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: 'submit_bug_report' })
                 .then((token) => {
+                    console.log(token)
                     // 2. Monta o payload JSON
                     const payload = {
                         user: encodedUser, // Já está codificado em Base64
