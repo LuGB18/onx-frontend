@@ -1,189 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ONX-Optimizer - FPS Booster e Limpador de PC para melhor desempenho">
-
-    <title>ONX-Optimizer - Otimize seu PC</title>
-
-    <script src="/onx-frontend/script.js" defer></script>   
-    <link rel="stylesheet" href="/onx-frontend/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONX Optimizer - Otimizador CLI Open-Source</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="dns-prefetch" href="https://www.google.com">
     <script src="https://www.google.com/recaptcha/api.js?render=6Ldnwx0sAAAAADTa_Whis-SwnStwiOC3v_O4dcob"></script>
-
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <div class="logo">
-                    <h1>ONX<span class="highlight">-Optimizer</span></h1>
-                </div>
-                <div class="nav-actions">
-                    <a href="https://github.com/LuGB18" target="_blank" class="github-link" aria-label="GitHub Profile">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 3 8.38 8.38 0 0 0 12 1 8.38 8.38 0 0 0 4.09 3 5.07 5.07 0 0 0 4 4.77 5.44 5.44 0 0 0 2 10.77c0 4.2 3.2 5.22 6.44 7A3.37 3.37 0 0 0 9 18.13V19"></path></svg>
-                    </a>
-                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
-                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                </button>
-                </div>
+    <div class="container">
+        <header>
+            <h1>ONX</h1>
+            <p class="subtitle">OPTIMIZER</p>
+            <p class="description">
+                Otimizador de sistema em linha de comando<br>
+                Feito em Python • 100% Open-Source • Rápido e leve poderoso
+            </p>
+            <div class="buttons">
+                <a href="#" id="downloadBtn" class="btn-primary">Baixar ONX Optimizer</a>
+                <a href="DC_LINK" target="_blank" class="btn-secondary">Entrar no Discord</a>
             </div>
-        </nav>
-    </header>
+        </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h2 class="hero-title">Maximize o Desempenho do Seu PC</h2>
-                    <p class="hero-subtitle">Otimização inteligente para jogos e produtividade</p>
-                    <div class="hero-buttons">
-                        <button class="btn btn-primary">Download Grátis</button>
-                        <button class="btn btn-secondary">Saiba Mais</button>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="stats-card">
-                        <div class="stat-item">
-                            <span class="stat-number">+60%</span>
-                            <span class="stat-label">FPS Boost</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">5GB+</span>
-                            <span class="stat-label">Espaço Liberado</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <footer>
+            <p>Desenvolvido por <a href="GH_LINK" target="_blank">@LuGB18</a> •
+                Discord: <span>luan_bogo18</span></p>
+        </footer>
+    </div>
 
-        <section class="about">
-            <div class="container">
-                <h2 class="section-title">O que é o ONX-Optimizer?</h2>
-                <div class="about-content">
-                    <p class="about-text">
-                        O <strong>ONX-Optimizer</strong> é uma solução completa de otimização para seu computador, desenvolvida para extrair o máximo desempenho do seu hardware. Combinando tecnologia avançada de limpeza e otimização de sistema, o ONX-Optimizer elimina arquivos desnecessários, processos em segundo plano que consomem recursos e configurações que limitam o potencial do seu PC.
-                    </p>
-                    <p class="about-text">
-                        Seja você um gamer buscando mais FPS nos seus jogos favoritos ou um profissional que precisa de um sistema ágil e responsivo, o ONX-Optimizer oferece ferramentas poderosas e intuitivas para transformar a experiência de uso do seu computador.
-                    </p>
-                </div>
-            </div>
-        </section>
+    <!-- Botão flutuante de Bug Report -->
+    <div class="bug-report-btn" id="openBugReport">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+            <line x1="12" y1="9" x2="12" y2="13"></line>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+        </svg>
+    </div>
 
-        <section class="features">
-            <div class="container">
-                <h2 class="section-title">Recursos Principais</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">🚀</div>
-                        <h3 class="feature-title">FPS Booster</h3>
-                        <p class="feature-description">
-                            Otimize automaticamente as configurações do Windows para jogos, desativando processos desnecessários e alocando recursos para maximizar a taxa de quadros nos seus games.
-                        </p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🧹</div>
-                        <h3 class="feature-title">Limpeza Profunda</h3>
-                        <p class="feature-description">
-                            Remove arquivos temporários, cache obsoleto, logs desnecessários e outros dados que acumulam ao longo do tempo, liberando gigabytes de espaço em disco.
-                        </p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">⚡</div>
-                        <h3 class="feature-title">Otimização de RAM</h3>
-                        <p class="feature-description">
-                            Gerencia a memória RAM de forma inteligente, liberando recursos não utilizados e garantindo que seus aplicativos tenham acesso rápido à memória.
-                        </p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🛡️</div>
-                        <h3 class="feature-title">Seguro e Confiável</h3>
-                        <p class="feature-description">
-                            Todas as otimizações são reversíveis e seguras. O ONX-Optimizer cria pontos de restauração automáticos antes de realizar mudanças críticas no sistema.
-                        </p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📊</div>
-                        <h3 class="feature-title">Monitoramento em Tempo Real</h3>
-                        <p class="feature-description">
-                            Acompanhe o desempenho do seu PC com métricas detalhadas de CPU, RAM, disco e temperatura, tudo em uma interface clara e intuitiva.
-                        </p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🎯</div>
-                        <h3 class="feature-title">Otimização com 1 Clique</h3>
-                        <p class="feature-description">
-                            Não precisa ser especialista. Com apenas um clique, o ONX-Optimizer analisa e otimiza automaticamente seu sistema para o melhor desempenho.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta">
-            <div class="container">
-                <div class="cta-content">
-                    <h2 class="cta-title">Pronto para Turbinar seu PC?</h2>
-                    <p class="cta-text">Junte-se a milhares de usuários que já otimizaram seus computadores com o ONX-Optimizer.</p>
-                    <button class="btn btn-primary btn-large">Baixar Agora - Grátis</button>
-                    <p class="cta-note">Compatível com Windows 10 e 11 | Sem custos ocultos</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p class="footer-text">&copy; 2025 ONX-Optimizer. Todos os direitos reservados. | Desenvolvido por RUBIXqb (Discord: luanbogo18)</p>
-        </div>
-    </footer>
-
-    <!-- Botão Flutuante de Reportar Bug -->
-    <button class="bug-report-btn" id="bugReportBtn" aria-label="Reportar um Bug">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bug"><path d="M19 11h-1a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1m-1 16h1a3 3 0 0 0 3-3v-1a3 3 0 0 0-3-3h-1m-10 0h-1a3 3 0 0 0-3 3v1a3 3 0 0 0 3 3h1m10-16h-1a3 3 0 0 0-3 3v1a3 3 0 0 0 3 3h1"></path><line x1="12" y1="18" x2="12" y2="22"></line><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="10" x2="12" y2="14"></line></svg>
-    </button>
-
-    <!-- Modal de Reportar Bug -->
-    <div class="modal" id="bugReportModal">
+    <!-- Modal do Reporte de Bug -->
+    <div class="modal" id="bugModal">
         <div class="modal-content">
-            <span class="close-btn" id="closeModalBtn">&times;</span>
-            <h3 class="modal-title">Reportar um Bug</h3>
-            <form id="bugReportForm">
-                <div class="form-group">
-                    <label for="userName">Nome:</label>
-                    <input type="text" id="userName" name="userName" required>
-                </div>
-                <div class="form-group">
-                    <label for="userEmail">E-mail:</label>
-                    <input type="email" id="userEmail" name="userEmail" required>
-                </div>
-                <div class="form-group">
-                    <label for="userPhone">Telefone (Opcional):</label>
-                    <input type="tel" id="userPhone" name="userPhone">
-                </div>
-                <div class="form-group">
-                    <label for="userMessage">Mensagem (Detalhes do Bug):</label>
-                    <textarea id="userMessage" name="userMessage" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar Relatório</button>
-                <p class="recaptcha-note">Este formulário é protegido pelo reCAPTCHA.</p>
+            <span class="close">&times;</span>
+            <h2>Reportar um Bug ou Sugestão</h2>
+            <form id="bugForm">
+                <input type="text" placeholder="Seu nome" id="name" required />
+                <input type="email" placeholder="Seu e-mail" id="email" required />
+                <input type="tel" placeholder="Seu telefone (opcional)" id="phone" />
+                <textarea placeholder="Descreva o problema ou sugestão..." id="message" rows="5" required></textarea>
+                <button type="submit" class="btn-submit">Enviar Reporte</button>
             </form>
+            <p id="formStatus"></p>
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
+
 </html>
