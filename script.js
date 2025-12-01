@@ -10,15 +10,47 @@ const SUPORTE_API = "https://onxbd.vercel.app/api/suporte";
 document.querySelector('.btn-secondary').href = DC_LINK;
 document.querySelector('footer a').href = GH_LINK;
 
-// Download direto da API
+// Link de Download
 document.getElementById('downloadBtn').addEventListener('click', async (e) => {
-    e.preventDefault();
-    const a = document.createElement('a');
-    a.href = DWBT_API;
-    a.download = 'ONX-Optimizer-latest.zip';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+  e.preventDefault();
+
+  const btn = document.getElementById('downloadBtn');
+  const originalText = btn.textContent;
+
+  // Feedback visual enquanto carrega
+  btn.textContent = "Buscando link...";
+  btn.style.pointerEvents = "none";
+
+  try {
+    const response = await fetch(DWBT_API);
+
+    if (!response.ok) {
+      throw new Error("Servidor retornou erro " + response.status);
+    }
+
+    const data = await response.json();
+
+    // Verifica se veio o campo "link"
+    if (data.link && typeof data.link === "string") {
+      // Abre em nova aba → navegador inicia o download automaticamente
+      window.open(data.link, '_blank');
+
+      // Opcional: muda o texto por 3 segundos pra confirmar
+      btn.textContent = "Download iniciado!";
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.pointerEvents = "auto";
+      }, 3000);
+    } else {
+      throw new Error("Link não encontrado na resposta do servidor");
+    }
+
+  } catch (err) {
+    console.error(err);
+    alert("Erro ao obter o link de download.\nTente novamente ou entre no Discord para pegar manualmente.");
+    btn.textContent = originalText;
+    btn.style.pointerEvents = "auto";
+  }
 });
 
 // Modal Bug Report
