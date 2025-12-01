@@ -223,7 +223,7 @@ class ButtonInteractions {
             btn.addEventListener('click', (e) => {
                 if (!btn.getAttribute('href')) {
                     e.preventDefault();
-                    this.showDownloadMessage();
+                    BugReportManager.bugReportForm.addEventListener('submit', (e) => this.handleFormSubmit(e))
                 }
             });
         });
